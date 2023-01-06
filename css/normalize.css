@@ -1,0 +1,11 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 500vh;
+  line-height: 1.4;
+  font-family: 'Roboto', sans-serif;
+}

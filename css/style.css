@@ -1,0 +1,28 @@
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container .home {
+  background: url('../img/stars1.jpg') center center/cover;
+}
+
+.flex-container .about {
+  background: #e59c2b;
+  
+}
+
+.flex-container .resume {
+  background: #8b4557;
+  
+}
+
+.flex-container .project {
+  background: #476568;
+  
+}
+
+.flex-container .contact {
+  background: #000000;
+}
