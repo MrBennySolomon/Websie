@@ -1,28 +1,85 @@
+:root {
+  --primary-yellow:rgba (227, 158, 78, 1);
+  --secondary-yellow:rgba (227, 158, 78, 0.7);
+  --primary-purple:rgba (204, 111, 154, 1);
+  --secondary-purple:rgba (204, 111, 154, 0.7);
+  --primary-blue:rgba (68, 100, 107, 1);
+  --secondary-blue:rgba (68, 100, 107, 0.7);
+  --dark-overlay:rgba (0, 0, 0, 0.7);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 500vh;
+  line-height: 1.4;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .flex-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.flex-container > div {
+  width: 100vw;
+  height: 100vh;
+}
+
 .flex-container .home {
+  color: white;
   background: url('../img/stars1.jpg') center center/cover;
+  background-attachment: fixed;
+}
+
+.home .section {
+  color: var(--primary-blue);
+  font-size: 2rem;
+  height: 60vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.flex-container .home .section a, h1, h2 {
+  color: var(--primary-purple);
+  text-decoration: none;
 }
 
 .flex-container .about {
-  background: #e59c2b;
+  background: var(--secondary-yellow);
   
 }
 
 .flex-container .resume {
-  background: #8b4557;
+  background: var(--secondary-purple);
   
 }
 
 .flex-container .project {
-  background: #476568;
+  background: var(--secondary-blue);
   
 }
 
 .flex-container .contact {
-  background: #000000;
+  background: var(--dark-overlay);
 }
