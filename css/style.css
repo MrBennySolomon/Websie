@@ -1,11 +1,8 @@
 :root {
-  --primary-yellow:rgba (227, 158, 78, 1);
-  --secondary-yellow:rgba (227, 158, 78, 0.7);
-  --primary-purple:rgba (204, 111, 154, 1);
-  --secondary-purple:rgba (204, 111, 154, 0.7);
-  --primary-blue:rgba (68, 100, 107, 1);
-  --secondary-blue:rgba (68, 100, 107, 0.7);
-  --dark-overlay:rgba (0, 0, 0, 0.7);
+  --primary-color: rgba(68, 100, 107, 0.75);
+  --secondary-color: rgba(204, 111, 154 , 0.9);
+  --overlay-color: rgba(24, 39, 51 , 0.85);
+  --menu-speed: 0.75s;
 }
 
 * {
@@ -56,11 +53,207 @@ body {
 
 .flex-container .home {
 
+  height: 100vh;
   color: #fff;
   text-shadow: 0.2rem 0.2rem rgb(68, 100, 107);
   font-size: 1.7rem;
   background: url('../img/stars1.jpg') center center/cover;
   background-attachment: fixed;
+}
+
+.container {
+  margin: auto;
+  overflow: hidden;
+  padding: 0 3rem;
+}
+
+#home:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#home .showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+}
+
+#home h1 {
+  font-size: 4rem;
+}
+
+#home p {
+  font-size: 1.3rem;
+}
+
+#home .menu-wrap .btn {
+  display: inline-block;
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  transition: opacity 1s ease-in-out;
+  text-decoration: none;
+}
+
+#home .btn:hover {
+  opacity: 0.7;
+}
+
+.menu-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: none;
+}
+
+.menu-wrap .toggler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+
+.menu-wrap .hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 60px;
+  height: 60px;
+  padding: 1rem;
+  background: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hamburger Line */
+.menu-wrap .hamburger > div {
+  position: relative;
+  flex: none;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease;
+}
+
+/* Hamburger Lines - Top & Bottom */
+.menu-wrap .hamburger > div::before,
+.menu-wrap .hamburger > div::after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: inherit;
+}
+
+/* Moves Line Down */
+.menu-wrap .hamburger > div::after {
+  top: 10px;
+}
+
+/* Toggler Animation */
+.menu-wrap .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+}
+
+/* Turns Lines Into X */
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+/* Rotate On Hover When Checked */
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+  transform: rotate(225deg);
+}
+
+/* Show Menu */
+.menu-wrap .toggler:checked ~ .menu {
+  visibility: visible;
+  z-index: 1;
+}
+
+.menu-wrap .toggler:checked ~ .menu > div {
+  transform: scale(1);
+  transition-duration: var(--menu-speed);
+}
+
+.menu-wrap .toggler:checked ~ .menu > div > div {
+  opacity: 1;
+  transition:  opacity 0.4s ease 0.4s;
+}
+
+.menu-wrap .menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-wrap .menu > div {
+  background: var(--overlay-color);
+  border-radius: 50%;
+  width: 200vw;
+  height: 200vw;
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.4s ease;
+}
+
+.menu-wrap .menu > div > div {
+  text-align: center;
+  max-width: 90vw;
+  max-height: 100vh;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu > div > div > ul > li {
+  list-style: none;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.menu-wrap .menu > div > div > ul > li > a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.4s ease;
+}
+
+.menu-wrap .menu > div > div > ul > li > a:hover {
+  color: var(--secondary-color);
 }
 
 .home .navbar {
@@ -70,10 +263,10 @@ body {
   background-color: #476568;
   opacity: 0.7;
   border-radius: 20px;
-  width: 100vw;
   height: 10vh;
   
 }
+
 .home .navbar img {
   width: 100px;
   height: 100px;
@@ -102,8 +295,8 @@ body {
 .home .section {
   color: var(--primary-blue);
   font-size: 2rem;
-  height: 80vh;
   width: 100vw;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -114,21 +307,15 @@ body {
 .home .section a, h1, h2 {
   color: #fff;
   text-decoration: none;
-  z-index: 5;
-}
-
-.home .section a, h1, h2 {
-  color: #fff;
-  text-decoration: none;
-  z-index: 5;
+  z-index: 0;
 }
 
 .home .section a {
   color: #fff;
   margin-top: 2rem;
-  border: 0.4rem solid #e59c2b;
+  border: 0.4rem solid #F9E79F;
   padding: 0.5rem 0.9rem;
-  z-index: 5;
+  z-index: 0;
 }
 
 .home .footer {
@@ -138,7 +325,6 @@ body {
   background-color: #8b5651;
   border-radius: 20px;
   opacity: 0.5;
-  width: 100vw;
   height: 10vh;
 }
 
@@ -153,7 +339,7 @@ body {
   border-radius: 50%;
   text-align: center;
   align-self: center;
-  z-index: 5;
+  z-index: 0;
 }
 
 .home .footer .copy {
@@ -177,25 +363,24 @@ body {
 }
 
 .flex-container .about {
-  background: var(--secondary-yellow);
+  background: #fff;
   
 }
 
 .flex-container .resume {
-  background: var(--secondary-purple);
-  
+  background: teal;
 }
 
 .flex-container .project {
-  background: var(--secondary-blue);
+  background: salmon;
   
 }
 
 .flex-container .contact {
-  background: var(--dark-overlay);
+  background: seagreen;
 }
 
-@media(max-width: 400px) {
+@media(max-width: 500px) {
   body {
     display: none;
   }
@@ -204,6 +389,16 @@ body {
   }
 }
 
-@media(max-width: 600px) and (min-width: 401px) {
-  
+@media(max-width: 705px) and (min-width: 501px) {
+  .home .navbar {
+    display: none;
+  }
+  .home .footer {
+    background-color: transparent;
+    height: 10vh;
+    justify-content: center;
+  }
+  .home .menu-wrap {
+    display: contents;
+  }
 }
