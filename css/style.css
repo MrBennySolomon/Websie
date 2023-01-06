@@ -268,8 +268,8 @@ body {
 }
 
 .home .navbar img {
-  width: 100px;
-  height: 100px;
+  width: 9rem;
+  height: 9rem;
   border-radius: 50%;
   z-index: 5;
 }
@@ -364,11 +364,313 @@ body {
 
 .flex-container .about {
   background: #fff;
-  
+  width: 90%;
+}
+
+.about .about-me {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  height: 20vh;
+}
+
+.about .about-me h5 {
+  font-size: 2rem;
+  color: #8b4557;
+}
+
+.about .about-me h1 {
+  color: #000;
+  font-size: 3rem;
+}
+
+.about .about-me img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.about .profile {
+  line-height: 1.6;
+  height: 35vh;
+}
+
+.about .profile p {
+  font-size: 1.8rem;
+}
+
+.about .profile p.header {
+  font-weight: bold;
+}
+
+.about .skills {
+  height: 45vh;
+}
+
+.about .skill-bars {
+	list-style: none;
+	margin: 6rem 0 3rem;
+}
+
+.about .skill-bars li {
+	height: .6rem;
+	background: #a1a1a1;
+	width: 100%;
+	margin-bottom: 6rem;
+	padding: 0;
+	position: relative;
+}
+
+.about .skill-bars li strong {
+	position: absolute;
+	left: 0;
+	top: -3rem;
+	font-family: "poppins-bold", sans-serif;
+	color: #313131;
+	text-transform: uppercase;
+	letter-spacing: .2rem;
+	font-size: 1.5rem;
+	line-height: 2.4rem;
+}
+
+.about .skill-bars li .progress {
+	background: #313131;
+	position: relative;
+	height: 100%;
+}
+
+.about .skill-bars li .progress span {
+	position: absolute;
+	right: 0;
+	top: -3.6rem;
+	display: block;
+	font-family: "poppins-regular", sans-serif;
+	color: white;
+	font-size: 1.1rem;
+	line-height: 1;
+	background: #313131;
+	padding: .6rem .6rem;
+	border-radius: 3px;
+}
+
+.about .skill-bars li .progress span::after {
+	position: absolute;
+	left: 50%;
+	bottom: -5px;
+	margin-left: -5px;
+	border-right: 5px solid transparent;
+	border-left: 5px solid transparent;
+	border-top: 5px solid #313131;
+	content: "";
+}
+
+.about .skill-bars li .percent5   { width: 5%; }
+.about .skill-bars li .percent10  { width: 10%; }
+.about .skill-bars li .percent15  { width: 15%; }
+.about .skill-bars li .percent20  { width: 20%; }
+.about .skill-bars li .percent25  { width: 25%; }
+.about .skill-bars li .percent30  { width: 30%; }
+.about .skill-bars li .percent35  { width: 35%; }
+.about .skill-bars li .percent40  { width: 40%; }
+.about .skill-bars li .percent45  { width: 45%; }
+.about .skill-bars li .percent50  { width: 50%; }
+.about .skill-bars li .percent55  { width: 55%; }
+.about .skill-bars li .percent60  { width: 60%; }
+.about .skill-bars li .percent65  { width: 65%; }
+.about .skill-bars li .percent70  { width: 70%; }
+.about .skill-bars li .percent75  { width: 75%; }
+.about .skill-bars li .percent80  { width: 80%; }
+.about .skill-bars li .percent85  { width: 85%; }
+.about .skill-bars li .percent90  { width: 90%; }
+.about .skill-bars li .percent95  { width: 95%; }
+.about .skill-bars li .percent100 { width: 100%; }
+
+.about .hire-me,
+.about .cv {
+  text-decoration: none;
+  border: 3px solid #333; 
+  padding: 10px 100px;
+  margin-bottom: 10px;
+  width: 90%;
+  height: 5%;
+  text-align: center;
+}
+
+.about .resume .cv {
+  color: #fff;
+  background-color: #333;
+  padding: 10px 100px;
 }
 
 .flex-container .resume {
-  background: teal;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#resume {
+	padding-bottom: 12rem;
+}
+
+#resume .resume-header {
+	text-align: center;
+}
+#resume .resume-header h2 {
+	color: #;
+}
+
+#resume .resume-timeline {
+	max-width: 980px;
+}
+#resume .timeline-wrap {
+	position: relative;
+	margin-top: 1.5rem;
+	margin-bottom: 6rem;
+}
+#resume .timeline-wrap::before {
+	content: "";
+	display: block;
+	width: 1px;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.1);
+	position: absolute;
+	left: 35%;
+	top: 0;
+}
+#resume .timeline-block {
+	position: relative;
+	padding-top: 1.5rem;
+}
+#resume .timeline-ico {
+	height: 4.8rem;
+	width: 4.8rem;
+	line-height: 4.8rem;
+	background: #313131;
+	border-radius: 50%;
+	text-align: center;
+	color: #FFFFFF;
+	position: absolute;
+	left: 35%;
+	top: .9rem;
+	margin-left: -2.4rem;
+}
+#resume .timeline-ico i {
+	position: relative;
+	left: .05rem;
+	top: .2rem;
+}
+
+#resume .timeline-header {
+	float: left;
+	width: 35%;
+	padding-right: 90px;
+	text-align: right;
+}
+#resume .timeline-header h3 {
+	margin-bottom: 0;
+}
+#resume .timeline-header p {
+	font-family: "poppins-regular", sans-serif;
+	font-size: 1.6rem;
+	color: #888888;
+}
+#resume .timeline-content {
+	margin-left: 35%;
+	padding-left: 60px;
+}
+#resume .timeline-content h4 {
+	position: relative;
+	padding-bottom: 1.8rem;
+}
+#resume .timeline-content h4::after {
+	content: "";
+	display: block;
+	height: 3px;
+	width: 50px;
+	background: rgba(0, 0, 0, 0.2);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+/**
+ * responsive:
+ * resume
+ * ------------------------------------------------------------------- 
+ */
+@media only screen and (max-width:1024px) {
+	#resume .timeline-header {
+		padding-right: 50px;
+	}
+	#resume .timeline-header h3 {
+		font-size: 1.8rem;
+	}
+	#resume .timeline-header p {
+		font-size: 1.4rem;
+	}
+	#resume .timeline-content {
+		padding-left: 50px;
+	}
+}
+@media only screen and (max-width:768px) {
+	#resume .timeline-wrap::before {
+		left: 2.4rem;
+	}
+	#resume .timeline-ico {
+		left: 2.4rem;
+	}
+	#resume .timeline-header {
+		float: none;
+		width: auto;
+		padding-right: 15px;
+		text-align: left;
+	}
+	#resume .timeline-header h3 {
+		font-size: 2rem;
+	}
+	#resume .timeline-header p {
+		font-size: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+	#resume .timeline-content {
+		margin: 0;
+	}
+	#resume .timeline-content h4 {
+		padding-bottom: 0;
+		padding-top: 2.1rem;
+		margin-bottom: .6rem;
+		font-size: 1.7rem;
+	}
+	#resume .timeline-content h4::after {
+		bottom: auto;
+		top: 0;
+	}
+	#resume .timeline-header, #resume .timeline-content {
+		padding-left: 7rem;
+	}
+}
+@media only screen and (max-width:480px) {
+	#resume .resume-header h2 {
+		font-size: 2.2rem;
+	}
+	#resume .timeline-wrap::before {
+		left: 1.8rem;
+	}
+	#resume .timeline-ico {
+		height: 3.6rem;
+		width: 3.6rem;
+		line-height: 3.6rem;
+		left: 1.8rem;
+		margin-left: -1.8rem;
+		font-size: 1.5rem;
+	}
+	#resume .timeline-header, #resume .timeline-content {
+		padding-left: 5.5rem;
+	}
 }
 
 .flex-container .project {
@@ -380,7 +682,7 @@ body {
   background: seagreen;
 }
 
-@media(max-width: 500px) {
+@media(max-width: 599px) {
   body {
     display: none;
   }
@@ -389,7 +691,7 @@ body {
   }
 }
 
-@media(max-width: 705px) and (min-width: 501px) {
+@media(max-width: 705px) and (min-width: 600px) {
   .home .navbar {
     display: none;
   }

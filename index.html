@@ -9,12 +9,11 @@
   <meta name="description" content="my name is Benny Solomon and i am a fullstack software developer">
   <meta name="keywords" content="developer, web, front, end, fullstack, benny solomon, software">
   
-  <!-- <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/normalize.css"> -->
   <link rel="stylesheet" href="css/style.css">
   
   <script src="https://kit.fontawesome.com/fa98044e1d.js" crossorigin="anonymous"></script>
-  
+  <script src="./js/script.js"></script>
+
   <title>Benny Solomon | Fullstack Developer</title>
 </head>
 <body>
@@ -23,17 +22,17 @@
     <div class="home-overlay"></div>
     <div id="home" class="home container showcase-container">
       <div class="menu-wrap">
-        <input type="checkbox" class="toggler">
+        <input id="check-box" type="checkbox" class="toggler">
         <div class="hamburger"><div></div></div>
-        <div class="menu">
+        <div id="menu" class="menu">
           <div>
             <div>
               <ul>
-                <li><a href="#home">HOME</a></li>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#resume">RESUME</a></li>
-                <li><a href="#project">PROJECT</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li><a onclick="uncheck();" href="#home">HOME</a></li>
+                <li><a onclick="uncheck();" href="#about">ABOUT</a></li>
+                <li><a onclick="uncheck();" href="#resume">RESUME</a></li>
+                <li><a onclick="uncheck();" href="#project">PROJECT</a></li>
+                <li><a onclick="uncheck();" href="#contact">CONTACT</a></li>
               </ul>
             </div>
           </div>
@@ -64,9 +63,145 @@
       </footer>
     </div>
     <div id="about" class="about">
-      <div class="about-me"></div>
+      <div class="about-me">
+        <h5>About Me</h5>
+   			<h1>Let me introduce myself.</h1>
+        <img src="./img/me.jpg" alt="Profile Picture">
+      </div>
+      <div class="profile">
+        <p class="header">FULL NAME:</p>
+        <p>Benny Solomon</p>
+        <p class="header">BIRTH DATE:</p>
+        <p>January 28, 1982</p>
+        <p class="header">JOB:</p>
+        <p>Searching for Junior Fullstack Developer Position</p>
+        <p class="header">WEBSITE:</p>
+        <p>https://benny-solomon.azurewebsites.net/</p>
+        <p class="header">EMAIL:</p>
+        <p>mr.benny.solomon@gmail.com</p>
+      </div>
+      <div class="skills">
+				<ul class="skill-bars">
+				   <li>
+				   	<div class="progress percent90"><span>90%</span></div>
+				   	<strong>HTML</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent95"><span>95%</span></div>
+				   	<strong>CSS</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent95"><span>95%</span></div>
+				   	<strong>Javascript</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent90"><span>90%</span></div>
+				   	<strong>Design Patterns</strong>
+				   </li>
+				   <li>
+				   	<div class="progress percent90"><span>90%</span></div>
+				   	<strong>OBJECT ORIENTED PROGRAMMING</strong>
+				   </li>
+				</ul>
+        <a href="#contact" title="HIRE ME" class="hire-me">HIRE ME</a>
+   		<a href="./pdf/cv.pdf" title="DOWNLOAD CV" class="cv">DOWNLOAD CV</a> <!-- /skill-bars -->
+      </div>
+      
     </div>
-    <div id="resume" class="resume"></div>
+    <div id="resume" class="resume">
+        <div class="row resume-timeline">
+          <div class="col-twelve resume-header">
+            <h2>Work Experience</h2>
+          </div> <!-- /resume-header -->
+          <div class="col-twelve">
+            <div class="timeline-wrap">
+              <div class="timeline-block">
+                <div class="timeline-ico">
+                  <i class="fa fa-briefcase"></i>
+                </div>
+                <div class="timeline-header">
+                  <h3>Full-Stack Developer</h3>
+                  <p>April 2018 - August 2018</p>
+                </div>
+                <div class="timeline-content">
+                  <h4>Hilan</h4>
+                  <p>Full-Stack Developer | ASP.NET | C# | TFS | HTML | CSS | Java-Script.</p>
+                </div>
+              </div> <!-- /timeline-block -->
+            </div> <!-- /timeline-wrap -->   		
+          </div> <!-- /col-twelve -->
+        </div> <!-- /resume-timeline -->
+        <div class="row resume-timeline">
+          <div class="col-twelve resume-header">
+            <h2>Education</h2>
+          </div> <!-- /resume-header -->
+          <div class="col-twelve">
+            <div class="timeline-wrap">
+              <div class="timeline-block">
+                <div class="timeline-ico">
+                  <i class="fa fa-graduation-cap"></i>
+                </div>
+                <div class="timeline-header">
+                  <h3>Fullstack Developer Bootcamp Training</h3>
+                  <p>December 2022 - June 2023</p>
+                </div>
+                <div class="timeline-content">
+                  <h4>Apple seeds</h4>
+                  <p>HTML | CSS | Javascript | React | Node</p>
+                </div>
+              </div> <!-- /timeline-block -->
+              <div class="timeline-block">
+                <div class="timeline-ico">
+                  <i class="fa fa-graduation-cap"></i>
+                </div>
+                <div class="timeline-header">
+                  <h3>Software Development Training</h3>
+                  <p>September 2017 - April 2018</p>
+                </div>
+                <div class="timeline-content">
+                  <h4>Infinity Labs R&D</h4>
+                  <p>Java | Object Oriented Programming | Multi-Threading | C | Linux.</p>
+                  <p>1,215 Hours + Diploma
+                </div>
+              </div> <!-- /timeline-block -->
+              <div class="timeline-block">
+   
+                <div class="timeline-ico">
+                  <i class="fa fa-graduation-cap"></i>
+                </div>
+   
+                <div class="timeline-header">
+                  <h3>Bachelor Degree B.sc Computer Science</h3>
+                  <p>2013 - 2016</p>
+                </div>
+   
+                <div class="timeline-content">
+                  <h4>HIT - Holon Institute of Technology</h4>
+                  <p>Data Structures | Algorithms | Sorting | Design Patterns | State Machines | Complexity | Compilation Theory.</p>
+                </div>
+   
+              </div> <!-- /timeline-block -->
+              <div class="timeline-block">
+   
+                <div class="timeline-ico">
+                  <i class="fa fa-graduation-cap"></i>
+                </div>
+   
+                <div class="timeline-header">
+                  <h3>Electronics Technician Training</h3>
+                  <p>2000 - 2001</p>
+                </div>
+   
+                <div class="timeline-content">
+                  <h4>Amal A College</h4>
+                  <p>Electronics Technician + Diploma.</p>
+                </div>
+   
+              </div> <!-- /timeline-block -->
+            </div> <!-- /timeline-wrap -->   			
+          </div> <!-- /col-twelve -->
+        </div> <!-- /resume-timeline -->
+    </div>
     <div id="project" class="project"></div>
     <div id="contact" class="contact"></div>
   </div>
