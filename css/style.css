@@ -26,6 +26,8 @@ body {
   height: 500vh;
   line-height: 1.4;
   font-family: Arial, Helvetica, sans-serif;
+	background: url('../img/stars1.jpg') center center/cover;
+  background-attachment: fixed;
 }
 
 .flex-container {
@@ -363,11 +365,13 @@ body {
 }
 
 .flex-container .about {
-  background: #fff;
-  width: 90%;
+	background-color: #fff;
+	opacity: 0.6;
 }
 
 .about .about-me {
+
+	
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -510,6 +514,8 @@ body {
   background: #fff;
   font-size: 1rem;
   font-weight: bold;
+	background-color: #fff;
+	opacity: 0.6;
 }
 
 #resume {
@@ -690,6 +696,8 @@ body {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
+	background-color: #fff;
+	opacity: 0.6;
 }
 
 .project h5 {
@@ -706,7 +714,8 @@ body {
   justify-content: flex-start;
   align-items: center;
   flex-direction: column;
-  
+  background-color: #fff;
+	opacity: 0.6;
 }
 
 .contact .title {
@@ -728,9 +737,11 @@ body {
 
 
 #contact {
-	background: #151515;
+
 	padding-top: 12rem;
 	padding-bottom: 7.2rem;
+	background-color: #000;
+	opacity: 0.6;
 }
 #contact .section-intro h1 {
 	color: white;
