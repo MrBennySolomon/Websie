@@ -4,282 +4,463 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <meta name="author" content="Benny Solomon">
-  <meta name="description" content="my name is Benny Solomon and i am a fullstack software developer">
-  <meta name="keywords" content="developer, web, front, end, fullstack, benny solomon, software">
-  
-  <link rel="stylesheet" href="css/style.css">
-  
-  <script src="https://kit.fontawesome.com/fa98044e1d.js" crossorigin="anonymous"></script>
-  <script src="./js/script.js"></script>
-
-  <title>Benny Solomon | Fullstack Developer</title>
+  <meta http-equiv="refresh" content="10;url=https://benny-solomon.netlify.app/me" />
+  <title>Document</title>
+  <style>
+    body, html {
+  margin:0;
+  padding:0;
+  font-size:0;
+}
+div {
+  display:none;
+}
+canvas {
+  width:100vw;
+  height:100vh;
+}
+  </style>
 </head>
 <body>
-  <h1></h1>
-  <div class="flex-container">
-    <div class="home-overlay"></div>
-    <div id="home" class="home container showcase-container">
-      <div class="menu-wrap">
-        <input id="check-box" type="checkbox" class="toggler">
-        <div class="hamburger"><div></div></div>
-        <div id="menu" class="menu">
-          <div>
-            <div>
-              <ul>
-                <li><a onclick="uncheck();" href="#home">HOME</a></li>
-                <li><a onclick="uncheck();" href="#about">ABOUT</a></li>
-                <li><a onclick="uncheck();" href="#resume">RESUME</a></li>
-                <li><a onclick="uncheck();" href="#project">PROJECT</a></li>
-                <li><a onclick="uncheck();" href="#contact">CONTACT</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-      <nav class="navbar">
-        <img src="./img/me.jpg" alt="me">
-        <ul>
-          <li><a href="#home">HOME</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#resume">RESUME</a></li>
-          <li><a href="#project">PROJECT</a></li>
-          <li><a href="#contact">CONTACT</a></li>
-        </ul>
-      </nav>
-      <section class="section">
-        <h4>HELLO, WORLD</h4>
-        <h1>I'm <em>Benny Solomon</em></h1>
-        <h4>FULL-STACK DEVELOPER</h4>
-        <a href="#about" class="btn">MORE ABOUT ME</a>
-      </section>
-      <footer class="footer">
-        <a class="facebook" href="#"><i class="fab fa-facebook fa-2x"></i></a>
-        <a class="github" href="#"><i class="fab fa-github fa-2x"></i></a>
-        <a class="youtube" href="#"><i class="fab fa-youtube fa-2x"></i></a>
-        <a class="linkedin" href="#"><i class="fab fa-linkedin fa-2x"></i></a>
-        <a class="copy">Copyright &copy; 2023 - Benny Solomon</a>
-      </footer>
-    </div>
-    <div id="about" class="about">
-      <div class="about-me">
-        <h5>About Me</h5>
-   			<h1>Let me introduce myself.</h1>
-        <img src="./img/me.jpg" alt="Profile Picture">
-      </div>
-      <div class="profile">
-        <p class="header">FULL NAME:</p>
-        <p>Benny Solomon</p>
-        <p class="header">BIRTH DATE:</p>
-        <p>January 28, 1982</p>
-        <p class="header">JOB:</p>
-        <p>Searching for Junior Fullstack Developer Position</p>
-        <p class="header">WEBSITE:</p>
-        <p>https://benny-solomon.azurewebsites.net/</p>
-        <p class="header">EMAIL:</p>
-        <p>mr.benny.solomon@gmail.com</p>
-      </div>
-      <div class="skills">
-				<ul class="skill-bars">
-				   <li>
-				   	<div class="progress percent90"><span>90%</span></div>
-				   	<strong>HTML</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent95"><span>95%</span></div>
-				   	<strong>CSS</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent95"><span>95%</span></div>
-				   	<strong>Javascript</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent90"><span>90%</span></div>
-				   	<strong>Design Patterns</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent90"><span>90%</span></div>
-				   	<strong>OBJECT ORIENTED PROGRAMMING</strong>
-				   </li>
-				</ul>
-        <a href="#contact" title="HIRE ME" class="hire-me">HIRE ME</a>
-   		<a href="./pdf/cv.pdf" title="DOWNLOAD CV" class="cv">DOWNLOAD CV</a> <!-- /skill-bars -->
-      </div>
-    </div>
-    <div id="resume" class="resume">
-      <section id="resume" class="grey-section">
-        <div class="row section-intro">
-           <div class="col-twelve">
-           </div>   		
-         </div> <!-- /section-intro--> 
-        <div class="row resume-timeline">
-          <div class="col-twelve resume-header">
-            <h2>Work Experience</h2>
-          </div> <!-- /resume-header -->
-          <div class="col-twelve">
-            <div class="timeline-wrap">
-              <div class="timeline-block">
-                <div class="timeline-ico">
-                  <i class="fa fa-briefcase"></i>
-                </div>
-                <div class="timeline-header">
-                  <h3>Full-Stack Developer</h3>
-                  <p>April 2018 - August 2018</p>
-                </div>
-                <div class="timeline-content">
-                  <h4>Hilan</h4>
-                  <p>Full-Stack Developer | ASP.NET | C# | TFS | HTML | CSS | Java-Script.</p>
-                </div>
-              </div> <!-- /timeline-block -->
-            </div> <!-- /timeline-wrap -->   		
-          </div> <!-- /col-twelve -->
-        </div> <!-- /resume-timeline -->
-        <div class="row resume-timeline">
-          <div class="col-twelve resume-header">
-            <h2>Education</h2>
-          </div> <!-- /resume-header -->
-          <div class="col-twelve">
-            <div class="timeline-wrap">
-              <div class="timeline-block">
-                <div class="timeline-ico">
-                  <i class="fa fa-graduation-cap"></i>
-                </div>
-                <div class="timeline-header">
-                  <h3>Fullstack Developer Bootcamp Training</h3>
-                  <p>December 2022 - June 2023</p>
-                </div>
-                <div class="timeline-content">
-                  <h4>Apple seeds</h4>
-                  <p>HTML | CSS | Javascript | React | Node</p>
-                </div>
-              </div> <!-- /timeline-block -->
-              <div class="timeline-block">
-                <div class="timeline-ico">
-                  <i class="fa fa-graduation-cap"></i>
-                </div>
-                <div class="timeline-header">
-                  <h3>Software Development Training</h3>
-                  <p>September 2017 - April 2018</p>
-                </div>
-                <div class="timeline-content">
-                  <h4>Infinity Labs R&D</h4>
-                  <p>Java | Object Oriented Programming | Multi-Threading | C | Linux.</p>
-                  <p>1,215 Hours + Diploma
-                </div>
-              </div> <!-- /timeline-block -->
-              <div class="timeline-block">
-   
-                <div class="timeline-ico">
-                  <i class="fa fa-graduation-cap"></i>
-                </div>
-   
-                <div class="timeline-header">
-                  <h3>Bachelor Degree B.sc Computer Science</h3>
-                  <p>2013 - 2016</p>
-                </div>
-   
-                <div class="timeline-content">
-                  <h4>HIT - Holon Institute of Technology</h4>
-                  <p>Data Structures | Algorithms | Sorting | Design Patterns | State Machines | Complexity | Compilation Theory.</p>
-                </div>
-   
-              </div> <!-- /timeline-block -->
-              <div class="timeline-block">
-   
-                <div class="timeline-ico">
-                  <i class="fa fa-graduation-cap"></i>
-                </div>
-   
-                <div class="timeline-header">
-                  <h3>Electronics Technician Training</h3>
-                  <p>2000 - 2001</p>
-                </div>
-   
-                <div class="timeline-content">
-                  <h4>Amal A College</h4>
-                  <p>Electronics Technician + Diploma.</p>
-                </div>
-   
-              </div> <!-- /timeline-block -->
-            </div> <!-- /timeline-wrap -->   			
-          </div> <!-- /col-twelve -->
-        </div> <!-- /resume-timeline -->
-    </div>
-    <div id="project" class="project">
-      <h5>AR Java Android Project</h5>
-      <iframe width="100%" height="600px" src="https://www.youtube.com/embed/tY2QI8MCZI8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-    <div id="contact" class="contact">
-        <div class="row section-intro">
-           <div class="col-twelve">
-             <h5>Contact</h5>
-             <h1>I'd Love To Hear From You.</h1>
-             <p class="lead"></p>
-           </div> 
-         </div> <!-- /section-intro -->
-         <div class="row contact-form">
-           <div class="col-twelve">
-                <!-- form -->
-                <form name="contactForm" id="contactForm" method="post" action="">
-                <fieldset>
-                      <div class="form-field">
-                    <input name="contactName" type="text" id="contactName" placeholder="Name" value="" minlength="2" required="">
-                      </div>
-                      <div class="form-field">
-                     <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value="" required="">
-                     </div>
-                      <div class="form-field">
-                      <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value="">
-                     </div>                       
-                      <div class="form-field">
-                         <textarea name="contactMessage" id="contactMessage" placeholder="Message" rows="5" cols="50" required=""></textarea>
-                     </div>                      
-                     <div class="form-field">
-                         <button class="submit-form">Submit</button>
-                         <div id="submit-loader">
-                            <div class="text-loader">Sending...</div>                             
-                         <div class="s-loader">
-                        <div class="bounce1"></div>
-                        <div class="bounce2"></div>
-                        <div class="bounce3"></div>
-                    </div>
-                  </div>
-                      </div>
-                </fieldset>
-              </form> <!-- Form End --
-                <!-- contact-warning -->
-                <div id="message-warning">            	
-                </div>            
-                <!-- contact-success -->
-              <div id="message-success">
-                   <i class="fa fa-check"></i>Your message was sent, thank you!<br>
-              </div>
-             </div> <!-- /col-twelve -->
-         </div> <!-- /contact-form -->
-         <div class="row contact-info">
-           <div class="col-four tab-full">
-             <div class="icon">
-               <i class="icon-pin"></i>
-             </div>
-           </div>
-           <div class="col-four tab-full collapse">
-             <div class="icon">
-               <i class="icon-mail"></i>
-             </div>
-             <h5>Email Me At</h5>
-             <p>mr.benny.solomon@gmail.com<br></p>
-           </div>
-           <div class="col-four tab-full">
-             <div class="icon">
-               <i class="icon-phone"></i>
-             </div>
-             <h5>Call Me At</h5>
-             <p>Mobile: (+972) 050 9090401</p>
-           </div>
-         </div> <!-- /contact-info -->
-      </section> <!-- /contact -->
-    </div>
-  </div>
+  <div>
+    <ul data-time="500">
+        <li data-hue="50" >W</li>
+        <li data-hue="0" >E</li>
+        <li data-hue="100" >L</li>
+        <li data-hue="197" >L</li>
+        <li data-hue="10" >C</li>
+        <li data-hue="70" >O</li>
+        <li data-hue="150" >M</li>
+      </ul>
+      <ul data-time="500">
+        <li data-hue="50" >T</li>
+        <li data-hue="100" >O</li>
+      </ul>
+      <ul data-time="500">
+        <li data-hue="50" >M</li>
+        <li data-hue="129" >Y</li>
+      </ul>
+      <ul data-time="500">
+        <li data-hue="0" >W</li>
+        <li data-hue="100" >E</li>
+        <li data-hue="197" >B</li>
+        <li data-hue="10" >S</li>
+        <li data-hue="0" >I</li>
+        <li data-hue="100" >T</li>
+        <li data-hue="197" >E</li>
+      </ul>
+      <ul data-time="500">
+        <li data-hue="50" >I</li>
+      </ul>
+      <ul data-time="500">
+        <li data-hue="50" >A</li>
+        <li data-hue="129" >M</li>
+      </ul>
+  <ul>
+    <li data-hue="50" >B</li>
+    <li data-hue="0" >E</li>
+    <li data-hue="100" >N</li>
+    <li data-hue="197" >N</li>
+    <li data-hue="150" >Y</li>
+  </ul>
+</div>
+<canvas><h1 style="color: white;"> HELLO WORLD</h1></canvas>
+<h1 style="color: white;"> HELLO WORLD</h1>
+
+<script>
+  const newParticlesPerFrame = 50;
+
+const color = (hsl, o) => {
+    return `hsla(${hsl.h | 0}, ${hsl.s}%, ${hsl.l}%, ${o})`;
+};
+
+class TextSparks
+{
+    constructor() {
+
+        this.opa    = 0;
+        this.tick   = 0;
+        this.drawCB = null;
+        this.mask   = null;
+        this.canvas = window.document.querySelector('canvas');
+        this.engine = this.canvas.getContext('2d');
+
+        this.maskTick   = 0;
+        this.nextMaskCb = this.nextMask.bind(this);
+        this.maskCache  = [];
+
+        this.resize();
+        this.fetchData();
+        this.buildStackCache();
+
+        this.particleMap = new Map();
+
+    }
+
+    buildStackCache() {
+
+        this.maskCache = this.stack.map((stack) => {
+            return this.buildTextMask(stack.texts);
+        });
+
+    }
+
+    fetchData() {
+
+        this.stackId = -1;
+        this.stack   = [...document.querySelectorAll('div > ul')].map(ul => {
+            return {
+                ticks   : 0.05 * (ul.hasAttribute('data-time') ? ul.getAttribute('data-time') : 0),
+                fadeIn  : ul.hasAttribute('data-fade-in') ? 50 / Number(ul.getAttribute('data-fade-in')) : 0,
+                fadeOut : ul.hasAttribute('data-fade-out') ? 50 / Number(ul.getAttribute('data-fade-out')) : 0,
+                texts : [...ul.querySelectorAll('li')].map(li => {
+                    return {
+                        text : li.innerHTML.trim(),
+                        hsl : {
+                            h :li.hasAttribute('data-hue') ? Number(li.getAttribute('data-hue')) : 0,
+                            s :li.hasAttribute('data-saturation') ? Number(li.getAttribute('data-saturation')) : 100,
+                            l :li.hasAttribute('data-lightness') ? Number(li.getAttribute('data-lightness')) : 50
+                        }
+                    };
+                })
+            };
+        });
+
+    }
+
+    resize() {
+
+        this.width  = window.innerWidth;
+        this.height = window.innerHeight;
+
+        this.canvas.setAttribute('width', this.width);
+        this.canvas.setAttribute('height', this.height);
+
+    }
+
+    buildTextMask(texts) {
+
+        const mask = [];
+
+        const textAll = texts.reduce((all, textStack) => {
+            return all.concat(textStack.text);
+        }, '');
+
+        const size         = 0.8;
+        const width        = 200;
+        const height       = width / (this.width / this.height) | 0;
+        const baseFontSize = 20;
+
+        // const canvas = document.querySelector('#test');
+        const canvas = document.createElement('canvas');
+        const engine = canvas.getContext('2d');
+
+        canvas.setAttribute('width', width);
+        canvas.setAttribute('height', height);
+
+        const font = (size) => {
+            return `bold ${size}px Arial`;
+        };
+
+        engine.fillStyle = '#000';
+        engine.font = font(baseFontSize);
+        const m     = engine.measureText(textAll);
+        const rel   = m.width / (width * size);
+        const fSize = Math.min(height * 0.8, baseFontSize / rel | 0);
+
+        engine.font     = font(fSize);
+        const fontWidth = engine.measureText(textAll).width;
+
+        engine.fillText(
+            textAll,
+            (width - fontWidth) / 2,
+            height / 2 + fSize * 0.35
+        );
+
+        let left  = (width - fontWidth) / 2;
+        const bot = height / 2 + fSize * 0.35;
+
+        Object.values(texts).forEach(textStack => {
+
+            engine.clearRect(0, 0, width, height);
+
+            engine.fillText(
+                textStack.text,
+                left,
+                bot
+            );
+
+            left += engine.measureText(textStack.text).width;
+
+            const data     = engine.getImageData(0, 0, width, height);
+            const subStack = [];
+
+            for (let i = 0, max = data.width * data.height; i < max; i++) {
+                if (data.data[i * 4 + 3]) {
+                    subStack.push({
+                        x : (i % data.width) / data.width,
+                        y : (i / data.width | 0) / data.height,
+                        o : Math.random(),
+                        t : Math.random()
+                    });
+                }
+            }
+
+            mask.push({
+                hsl : textStack.hsl,
+                s   : subStack
+            });
+
+        });
+
+        return mask;
+    }
+
+    createNewParticle() {
+
+        for (let i = 0; i < newParticlesPerFrame; i++) {
+
+            let main        = Math.random() * this.mask.length | 0;
+            let subMask     = this.mask[main];
+            let maskElement = this.mask[main].s[Math.random() * this.mask[main].s.length | 0];
+
+            if (subMask && maskElement) {
+                let particle = {
+                    x   : maskElement.x,
+                    y   : maskElement.y,
+                    hsl : subMask.hsl,
+                    c   : this.prepareParticle
+                };
+
+                this.particleMap.set(particle, particle);
+            }
+
+        }
+    }
+
+    secLog(log, timesPerFrame) {
+        if(Math.random() < 1 / 60 / timesPerFrame) {
+            console.log(log);
+        }
+    }
+
+    clear() {
+        this.engine.fillStyle = '#111';
+        this.engine.fillRect(0, 0, this.width, this.height);
+    }
+
+    randFromList(...rands) {
+        return rands.reduce((acc, rand) => {
+            return acc + rand;
+        }, 0) / rands.length;
+    }
+
+    prepareParticle(particle) {
+
+        const r1 = Math.random();
+        const r2 = Math.random();
+        const r3 = Math.random();
+
+        const rad = r3 * Math.PI * 2;
+
+        particle.x += (-0.5 + r1) / 300;
+        particle.y += (-0.5 + r2) / 300;
+        particle.si = 1 + Math.random() * 4 | 0;
+        // particle.cc = this.randFromList(r2, r3);
+        // particle.cc = this.hue / 365;
+
+        particle.s = 0.003 + this.randFromList(r1, r2) / 10;
+        particle.l = 0;
+
+        particle.mx = Math.cos(rad) * (particle.s / (r1 < 0.05 ? 10 : 400));
+        particle.my = Math.sin(rad) * (particle.s / (r1 < 0.05 ? 10 : 400));
+
+        particle.c = this.drawParticle;
+    }
+
+    drawParticle(particle) {
+
+        if (particle.l >= 1) {
+            particle.c = null;
+            return;
+        }
+
+        particle.l += particle.s;
+        particle.x += particle.mx;
+        particle.y += particle.my;
+
+        this.engine.fillStyle = color(particle.hsl, this.opa * Math.sin(particle.l * Math.PI));
+        this.engine.fillRect(particle.x * this.width, particle.y * this.height, particle.si, particle.si);
+
+    }
+
+    renderParticles() {
+
+        this.particleMap.forEach((particle) => {
+
+            particle.c.call(this, particle);
+
+            if (!particle.c) {
+                this.particleMap.delete(particle);
+            }
+
+        });
+
+    }
+
+    drawStatic() {
+
+        let i = 0;
+        const step = 0.01;
+
+        this.mask.forEach(subMask => {
+            subMask.s.forEach(pos => {
+
+                i++;
+
+                this.engine.fillStyle = color(subMask.hsl, (1 + Math.cos(pos.x * 5 * pos.y * 5 + this.tick / 10)) / 2 * this.opa * pos.t * 0.5);
+                this.engine.fillRect(
+                    pos.x * this.width,
+                    pos.y * this.height,
+                    this.width / 150,
+                    this.width / 150
+                );
+
+                if (i % 2) {
+                    return;
+                }
+
+                pos.o        += step;
+                const opa     = Math.max(0, Math.sin(pos.o * Math.PI * 2));
+                const padding = opa * this.width / 200;
+
+                this.engine.fillStyle = color(subMask.hsl, this.opa * opa * 0.2);
+
+                if (pos.t < 0.5) {
+                    this.engine.beginPath();
+                    this.engine.arc(
+                        pos.x * this.width,
+                        pos.y * this.height,
+                        this.width / 500  + padding,
+                        0,
+                        Math.PI * 2
+                    );
+                    this.engine.fill();
+                } else {
+                    this.engine.fillRect(
+                        pos.x * this.width - padding,
+                        pos.y * this.height - padding,
+                        this.width / 150  + padding * 2,
+                        this.width / 150  + padding * 2
+                    );
+                }
+
+            });
+        });
+
+
+
+    }
+
+    draw() {
+
+        this.tick++;
+
+        this.nextMaskCb();
+        this.createNewParticle();
+        this.clear();
+
+        this.engine.globalCompositeOperation = 'lighter';
+        this.drawStatic();
+        this.renderParticles();
+        this.engine.globalCompositeOperation = 'source-over';
+
+        requestAnimationFrame(this.drawCB);
+
+    }
+
+    fadeInMask() {
+        this.opa += this.stack[this.stackId].fadeIn;
+
+        if (this.opa >= 1) {
+            this.opa = 1;
+
+            this.afterFadeIn();
+        }
+    }
+
+    afterFadeIn() {
+
+        this.opa = 1;
+
+        if (this.stack[this.stackId].ticks) {
+            this.maskTick   = 0;
+            this.nextMaskCb = this.tickMask.bind(this);
+        } else {
+            this.nextMaskCb = () => {};
+        }
+
+    }
+
+    fadeOutMask() {
+
+        this.opa -= this.stack[this.stackId].fadeOut;
+
+        if (this.opa <= 0) {
+            this.afterFadeOut();
+        }
+
+    }
+
+    afterFadeOut() {
+
+        this.opa = 0;
+        this.nextMaskCb = this.nextMask.bind(this);
+
+    }
+
+    tickMask() {
+
+        this.maskTick++;
+
+        if (this.maskTick >= this.stack[this.stackId].ticks) {
+            if (this.stack[this.stackId].fadeOut) {
+                this.nextMaskCb = this.fadeOutMask.bind(this);
+            } else {
+                this.afterFadeOut();
+            }
+        }
+
+    }
+
+    nextMask() {
+
+        this.stackId++;
+
+        if (this.stackId >= this.stack.length) {
+            this.stackId = 0;
+        }
+
+        this.mask = this.maskCache[this.stackId];
+
+        if (this.stack[this.stackId].fadeIn) {
+            this.nextMaskCb = this.fadeInMask.bind(this);
+        } else {
+            this.opa = 1;
+            this.afterFadeIn();
+        }
+    }
+
+    run() {
+
+        this.drawCB = this.draw.bind(this);
+        this.drawCB();
+
+    }
+}
+
+const a = new TextSparks();
+a.run();
+</script>
 </body>
 </html>
